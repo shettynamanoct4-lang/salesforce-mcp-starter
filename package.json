@@ -1,0 +1,22 @@
+{
+  "name": "salesforce-mcp-starter",
+  "version": "1.0.0",
+  "description": "Read-only Salesforce MCP server for AI coding assistants (Claude Code, Cursor, VS Code).",
+  "type": "module",
+  "bin": { "salesforce-mcp-starter": "dist/index.js" },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/guards.test.js",
+    "start": "node dist/index.js"
+  },
+  "author": "Naman G Shetty",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
